@@ -136,6 +136,9 @@ export PATH="$ANDROID_HOME/platform-tools:$PATH"
 # https://github.com/YUKASHIKADO/vitanote-app/blob/develop/doc/setup.md#provisioning-profile%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB
 export MATCH_PASSWORD="fastlane_match"
 
+# brewを勝手にupgradeしない設定
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 # ziを使うための設定
 # https://z-shell.pages.dev/docs/getting_started/installation#manual-installation
 zi_home="${HOME}/.zi"
