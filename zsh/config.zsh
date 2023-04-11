@@ -140,10 +140,9 @@ export FASTLANE_USER_APPLE_ID="murakami.eiki@yukashikado.co.jp"
 # brewを勝手にupgradeしない設定
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-# ziを使うための設定
-# https://z-shell.pages.dev/docs/getting_started/installation#manual-installation
-zi_home="${HOME}/.zi"
-source "${zi_home}/bin/zi.zsh"
-# Next two lines must be below the above two
-autoload -Uz _zi
-(( ${+_comps} )) && _comps[zi]=_zi
+# 使用するエディタ
+export EDITOR="vim"
+
+# ziを使うための設定(quick-setup)
+# https://wiki.zshell.dev/docs/getting_started/installation#quick-setup
+source <(curl -sL git.io/zi-loader); zzinit
