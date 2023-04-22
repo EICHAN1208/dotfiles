@@ -146,3 +146,6 @@ export EDITOR="vim"
 # ziを使うための設定(quick-setup)
 # https://wiki.zshell.dev/docs/getting_started/installation#quick-setup
 source <(curl -sL git.io/zi-loader); zzinit
+
+# Buildkitを使用する設定
+export DOCKER_BUILDKIT=1
