@@ -149,3 +149,6 @@ source <(curl -sL git.io/zi-loader); zzinit
 
 # Buildkitを使用する設定
 export DOCKER_BUILDKIT=1
+
+# (control + R)によるコマンド実行履歴をユニークにする設定
+setopt HIST_IGNORE_ALL_DUPS
