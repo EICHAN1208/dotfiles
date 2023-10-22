@@ -77,7 +77,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+  fzf
+  # あらかじめカスタムプラグインとして zsh-autosuggestions を ~/.oh-my-zsh/custom/plugins ディレクトリにcloneしておく必要がある
+  # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
+  zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,13 +117,9 @@ source $ZSH/oh-my-zsh.sh
 eval "$(rbenv init - zsh)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
-# nodevでNodeを使用するための設定
+# nodenvでNodeを使用するための設定
 eval "$(nodenv init -)"
 export PATH="$HOME/.nodenv/bin:$PATH"
-
-# cdでディレクトリ検索ができる
-# fzy + enhancd
-source /usr/local/src/enhancd/init.sh
 
 # androidでのシミュレータ起動に必要な java jdk を使用するためのパス
 # export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home"
