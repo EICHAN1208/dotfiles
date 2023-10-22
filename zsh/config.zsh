@@ -119,12 +119,9 @@ export PATH="$HOME/.nodenv/bin:$PATH"
 # fzy + enhancd
 source /usr/local/src/enhancd/init.sh
 
-# zshのオートサジェスチョン機能
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # androidでのシミュレータ起動に必要な java jdk を使用するためのパス
 # export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
@@ -152,3 +149,9 @@ export DOCKER_BUILDKIT=1
 
 # (control + R)によるコマンド実行履歴をユニークにする設定
 setopt HIST_IGNORE_ALL_DUPS
+
+# 他のターミナルとヒストリーを共有
+setopt share_history
+
+# 負荷測定ツールtaurusをを動かすために追加
+export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
