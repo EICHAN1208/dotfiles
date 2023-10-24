@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -79,10 +72,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  rails
+  terraform
   fzf
   # あらかじめカスタムプラグインとして zsh-autosuggestions を ~/.oh-my-zsh/custom/plugins ディレクトリにcloneしておく必要がある
   # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -109,9 +105,6 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # rbenvでRubyを使用するための設定
 eval "$(rbenv init - zsh)"
@@ -142,10 +135,6 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # 使用するエディタ
 export EDITOR="vim"
 
-# ziを使うための設定(quick-setup)
-# https://wiki.zshell.dev/docs/getting_started/installation#quick-setup
-source <(curl -sL git.io/zi-loader); zzinit
-
 # Buildkitを使用する設定
 export DOCKER_BUILDKIT=1
 
@@ -155,5 +144,5 @@ setopt HIST_IGNORE_ALL_DUPS
 # 他のターミナルとヒストリーを共有
 setopt share_history
 
-# 負荷測定ツールtaurusをを動かすために追加
+# 負荷測定ツールtaurusを動かすために追加
 export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
