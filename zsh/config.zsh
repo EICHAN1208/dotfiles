@@ -63,7 +63,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+# ZSH_CUSTOM=$HOME/dotfiles/oh-my-zsh/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -78,6 +78,7 @@ plugins=(
   # あらかじめカスタムプラグインとして zsh-autosuggestions を ~/.oh-my-zsh/custom/plugins ディレクトリにcloneしておく必要がある
   # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
   zsh-autosuggestions
+  # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
   zsh-syntax-highlighting
 )
 
