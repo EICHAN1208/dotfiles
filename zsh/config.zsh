@@ -80,9 +80,13 @@ plugins=(
   zsh-autosuggestions
   # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
   zsh-syntax-highlighting
+  docker
 )
 
 source $ZSH/oh-my-zsh.sh
+
+export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --info=inline --border --margin=1 --padding=1"
+# export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
 
 # User configuration
 
@@ -114,6 +118,14 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 # nodenvでNodeを使用するための設定
 eval "$(nodenv init -)"
 export PATH="$HOME/.nodenv/bin:$PATH"
+
+# rustupでRustを使用するための設定
+# RubyのYJITコンパイラを使用するためにRustのコンパイラが必要になった
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# jumpでディレクトリを移動するための設定
+# https://github.com/gsamokovarov/jump
+eval "$(jump shell)"
 
 # androidでのシミュレータ起動に必要な java jdk を使用するためのパス
 # export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home"
