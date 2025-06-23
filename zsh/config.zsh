@@ -159,3 +159,7 @@ setopt share_history
 
 # 負荷測定ツールtaurusを動かすために追加
 export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+
+# nvmを使用するための設定(npmのバージョン管理)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
