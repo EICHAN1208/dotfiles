@@ -11,9 +11,5 @@ source $SCRIPT_DIR/zsh/config.zsh
 source $SCRIPT_DIR/zsh/alias.zsh
 source $SCRIPT_DIR/zsh/functions.zsh
 
-# gcloud のシェルコマンド補完を有効にする
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
