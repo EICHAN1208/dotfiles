@@ -127,17 +127,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # https://github.com/gsamokovarov/jump
 eval "$(jump shell)"
 
-# androidでのシミュレータ起動に必要な java jdk を使用するためのパス
-# export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home"
-# export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
-
-export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH="$ANDROID_HOME/emulator:$PATH"
-export PATH="$ANDROID_HOME/tools:$PATH"
-export PATH="$ANDROID_HOME/tools/bin:$PATH"
-export PATH="$ANDROID_HOME/platform-tools:$PATH"
-
 # brewを勝手にupgradeしない設定
 export HOMEBREW_NO_AUTO_UPDATE=1
 
