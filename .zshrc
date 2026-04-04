@@ -7,9 +7,11 @@ fi
 
 SCRIPT_DIR=$HOME/dotfiles
 
-source $SCRIPT_DIR/zsh/config.zsh
+source $SCRIPT_DIR/zsh/omz.zsh
+source $SCRIPT_DIR/zsh/env.zsh
+source $SCRIPT_DIR/zsh/tools.zsh
+source $SCRIPT_DIR/zsh/options.zsh
 source $SCRIPT_DIR/zsh/alias.zsh
-source $SCRIPT_DIR/zsh/functions.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
