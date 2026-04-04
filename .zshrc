@@ -7,7 +7,7 @@ fi
 
 SCRIPT_DIR=$HOME/dotfiles
 
-source $SCRIPT_DIR/zsh/omz.zsh
+source $SCRIPT_DIR/zsh/plugins.zsh
 source $SCRIPT_DIR/zsh/env.zsh
 source $SCRIPT_DIR/zsh/tools.zsh
 source $SCRIPT_DIR/zsh/options.zsh
