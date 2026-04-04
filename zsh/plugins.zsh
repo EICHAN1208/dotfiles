@@ -24,9 +24,6 @@ zinit snippet OMZP::git
 zinit snippet OMZP::rails
 zinit snippet OMZP::terraform
 zinit snippet OMZP::fzf
-zinit snippet OMZP::docker
-zinit ice as"completion"
-zinit snippet OMZP::docker/_docker
 
 # 外部プラグイン
 zinit light zsh-users/zsh-autosuggestions
