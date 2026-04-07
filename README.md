@@ -77,10 +77,10 @@ zinit light ユーザー名/リポジトリ名
 
 Brewfile には以下の 4 種類のエントリが含まれています。
 
-| 種類 | 記法例 | ��明 |
+| 種類 | 記法例 | 説明 |
 |---|---|---|
 | tap | `tap "hashicorp/tap"` | サードパーティのリポジトリ |
-| formula | `brew "fzf"` | CLI ツー��� |
+| formula | `brew "fzf"` | CLI ツール |
 | cask | `cask "google-cloud-sdk"` | GUI アプリ |
 | VS Code 拡張 | `vscode "github.copilot"` | VS Code の拡張機能 |
 
@@ -93,7 +93,7 @@ brew bundle install --file Brewfile
 # 現在の環境から Brewfile を生成（上書き）
 brew bundle dump --file Brewfile --force
 
-# Brewfile に記載がないパッケージを一���表示
+# Brewfile に記載がないパッケージを一覧表示
 brew bundle cleanup --file Brewfile
 
 # Brewfile に記載がないパッケージを実際に削除
