@@ -36,7 +36,6 @@ brew "rbenv"
 brew "redis", restart_service: :changed
 brew "skaffold"
 brew "terminal-notifier"
-brew "tfenv", link: false
 brew "tflint"
 brew "tig"
 brew "tree"
