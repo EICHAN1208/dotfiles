@@ -1,6 +1,4 @@
 tap "hashicorp/tap"
-tap "homebrew/bundle"
-tap "homebrew/services"
 brew "act"
 brew "boost"
 brew "libyaml"
