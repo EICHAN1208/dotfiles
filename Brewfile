@@ -30,7 +30,6 @@ brew "node"
 brew "node-build"
 brew "nodenv"
 brew "nvm"
-brew "openssl@1.1"
 brew "pgcli"
 brew "postgresql@14", restart_service: :changed
 brew "python@3.10"
