@@ -7,8 +7,9 @@ fi
 source "${ZINIT_HOME}/zinit.zsh"
 
 # テーマ: powerlevel10k
-zinit ice depth=1
-zinit light romkatv/powerlevel10k
+# NOTE: Warp ターミナルでは p10k が不要なため無効化中。戻す場合はコメントを外す。
+# zinit ice depth=1
+# zinit light romkatv/powerlevel10k
 
 # oh-my-zsh ライブラリ（プラグインの前提）
 zinit snippet OMZL::git.zsh
