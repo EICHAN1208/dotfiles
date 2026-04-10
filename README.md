@@ -39,9 +39,6 @@ brew bundle install --file Brewfile
 
 # 4. シェルを再起動（zinit が自動でインストールされる）
 exec zsh
-
-# 5. Powerlevel10k の初回設定
-p10k configure
 ```
 
 ## アンインストール
@@ -123,9 +120,11 @@ brew update && brew upgrade && brew bundle dump --file Brewfile --force
 
 ```bash
 source ~/.zshrc
+# または
+reload  # alias.zsh で定義済み
 ```
 
-ただし、zinit のプラグイン追加・削除を行った場合は `exec zsh` でシェルを再起動した方が確実です。
+> **Warp をお使いの場合**: `exec zsh` はWarp のUI を破壊するため、必ず `reload` / `source ~/.zshrc` を使ってください。
 
 ### zinit の更新
 
