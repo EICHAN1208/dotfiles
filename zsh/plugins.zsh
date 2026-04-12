@@ -6,10 +6,11 @@ if [[ ! -d "$ZINIT_HOME" ]]; then
 fi
 source "${ZINIT_HOME}/zinit.zsh"
 
-# テーマ: powerlevel10k
-# NOTE: Warp ターミナルでは p10k が不要なため無効化中。戻す場合はコメントを外す。
-# zinit ice depth=1
-# zinit light romkatv/powerlevel10k
+# テーマ: powerlevel10k (Warp 以外のターミナルでのみ有効)
+if [[ "$TERM_PROGRAM" != "WarpTerminal" ]]; then
+  zinit ice depth=1
+  zinit light romkatv/powerlevel10k
+fi
 
 # oh-my-zsh ライブラリ（プラグインの前提）
 zinit snippet OMZL::git.zsh
